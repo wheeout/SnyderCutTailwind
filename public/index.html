@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/public/build/tailwind.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Zack Snyder's Justice League</title>
+  </head>
+  <body class="min-h-screen bg-black overflow-x-hidden">
+    <div class="header fixed z-20 w-full flex justify-between pt-7">
+      <div class="logo w-60 pl-10">
+        <a href="/public/index.html"><img src="/images/logo.png" /></a>
+      </div>
+      <div
+        class="menu flex float-right pr-32 text-white items-center font-poppins font-medium"
+      >
+        <a class="pr-20" href="#image1">IMAGE 1</a>
+        <a class="pr-20" href="#image2">IMAGE 2</a>
+        <a class="pr-20" href="#gif">GIF</a>
+        <button onclick="myFunction()">STOP MUSIC</button>
+      </div>
+    </div>
+    <div id="image1" class="image-1 h-screen">
+      <img src="/images/superman.png" />
+    </div>
+    <div id="image2" class="image-2 z-0 absolute">
+      <img src="/images/jl-2.png" />
+    </div>
+    <div
+      class="image-2a z-10 absolute pl-96 pt-20"
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+      data-aos-delay="100"
+    >
+      <img
+        class="mx-auto"
+        src="/images/justice_league___transparent_by_asthonx1-dab86aj.png"
+      />
+    </div>
+    <div id="gif" class="gif absolute w-screen mt-xl">
+      <img src="/images/notimpressed-lg.gif" />
+    </div>
+
+    <audio autoplay>
+      <source src="/audio/hallelujah.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script>
+      function myFunction() {
+        alert("C'mon, just enjoy it ;)\nHALLELUJAH!");
+      }
+    </script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
